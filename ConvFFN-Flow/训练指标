@@ -1,0 +1,83 @@
+参数量:
+10000:Validation EPE: 0.743753, 1px: 0.778992, 3px: 0.986539, 5px: 0.997489
+20000:Validation EPE: 0.600289, 1px: 0.856855, 3px: 0.992718, 5px: 0.998574
+30000:Validation EPE: 0.536680, 1px: 0.887183, 3px: 0.993348, 5px: 0.998604
+40000:Validation EPE: 0.530306, 1px: 0.894359, 3px: 0.994599, 5px: 0.999032
+50000:Validation EPE: 0.483243, 1px: 0.910853, 3px: 0.996263, 5px: 0.999051
+60000:Validation EPE: 0.476706, 1px: 0.916766, 3px: 0.995268, 5px: 0.998990
+70000:Validation EPE: 0.471901, 1px: 0.918617, 3px: 0.995994, 5px: 0.999111
+80000:Validation EPE: 0.455010, 1px: 0.922023, 3px: 0.995997, 5px: 0.999189
+90000:Validation EPE: 0.450557, 1px: 0.924895, 3px: 0.996299, 5px: 0.999102
+100000:Validation EPE: 0.433764, 1px: 0.933247, 3px: 0.996715, 5px: 0.999322
+110000:Validation EPE: 0.368864, 1px: 0.958348, 3px: 0.998249, 5px: 0.999834
+120000:Validation EPE: 0.427021, 1px: 0.937304, 3px: 0.996974, 5px: 0.999343
+130000:Validation EPE: 0.417021, 1px: 0.938995, 3px: 0.997366, 5px: 0.999491
+140000:Validation EPE: 0.418199, 1px: 0.941783, 3px: 0.997293, 5px: 0.999470
+150000:Validation EPE: 0.406081, 1px: 0.944607, 3px: 0.997447, 5px: 0.999488
+160000:Validation EPE: 0.402004, 1px: 0.945587, 3px: 0.997537, 5px: 0.999536
+170000:Validation EPE: 0.398660, 1px: 0.947416, 3px: 0.997860, 5px: 0.999629
+180000:Validation EPE: 0.400117, 1px: 0.946175, 3px: 0.997643, 5px: 0.999500
+190000:Validation EPE: 0.391835, 1px: 0.948914, 3px: 0.997507, 5px: 0.999497
+200000:Validation EPE: 0.387615, 1px: 0.949912, 3px: 0.997869, 5px: 0.999614
+210000:Validation EPE: 0.387240, 1px: 0.951280, 3px: 0.997815, 5px: 0.999641
+220000;Validation EPE: 0.384669, 1px: 0.952368, 3px: 0.998140, 5px: 0.999662
+230000:Validation EPE: 0.383171, 1px: 0.952549, 3px: 0.997857, 5px: 0.999656
+240000:Validation EPE: 0.382915, 1px: 0.952935, 3px: 0.997956, 5px: 0.999635
+250000:Validation EPE: 0.382049, 1px: 0.952989, 3px: 0.997956, 5px: 0.999629
+
+
+raft_tvl1；python train.py --name raft_tvl1 --stage River_data --validation River_data --lr 0.0001 --num_steps 100000 --batch_size 4 --image_size 400 400 --gpus 0  --wdecay 0.00005  --clip 1.0  --gamma 0.8 --mixed_precision
+
+10000:Validation EPE: 0.955854, 1px: 0.667595, 3px: 0.960733, 5px: 0.994243
+20000:Validation EPE: 0.841287, 1px: 0.719907, 3px: 0.973991, 5px: 0.995367
+30000:Validation EPE: 0.771247, 1px: 0.754889, 3px: 0.977825, 5px: 0.996326
+40000:Validation EPE: 0.697072, 1px: 0.799344, 3px: 0.982030, 5px: 0.997212
+50000:Validation EPE: 0.668542, 1px: 0.813163, 3px: 0.984185, 5px: 0.997342
+60000:Validation EPE: 0.656358, 1px: 0.820891, 3px: 0.985080, 5px: 0.997519
+70000:Validation EPE: 0.651917, 1px: 0.821572, 3px: 0.985186, 5px: 0.997375
+80000:Validation EPE: 0.642339, 1px: 0.827860, 3px: 0.985367, 5px: 0.997390
+90000:Validation EPE: 0.640278, 1px: 0.830054, 3px: 0.986196, 5px: 0.997649
+100000:Validation EPE: 0.633379, 1px: 0.832278, 3px: 0.986295, 5px: 0.997655
+
+
+python train.py --name raft_widim --stage River_data --validation River_data --lr 0.0001 --num_steps 100000 --batch_size 4 --image_size 400 400 --gpus 0  --wdecay 0.00005  --clip 1.0  --gamma 0.8 --mixed_precision
+
+10000：Validation EPE: 0.800242, 1px: 0.733444, 3px: 0.987335, 5px: 0.999225
+20000: Validation EPE: 0.695394, 1px: 0.784086, 3px: 0.993116, 5px: 0.999717
+30000：Validation EPE: 0.596771, 1px: 0.843226, 3px: 0.996636, 5px: 0.999922
+40000：Validation EPE: 0.557256, 1px: 0.868294, 3px: 0.997417, 5px: 0.999970
+50000：Validation EPE: 0.523407, 1px: 0.887614, 3px: 0.998110, 5px: 0.999891
+60000：Validation EPE: 0.514323, 1px: 0.893895, 3px: 0.998713, 5px: 0.999994
+70000：Validation EPE: 0.518731, 1px: 0.890333, 3px: 0.998686, 5px: 1.000000
+80000：Validation EPE: 0.495438, 1px: 0.902757, 3px: 0.998770, 5px: 0.999994
+90000：Validation EPE: 0.497285, 1px: 0.903010, 3px: 0.998707, 5px: 0.999994
+100000：Validation EPE: 0.487739, 1px: 0.905490, 3px: 0.998797, 5px: 0.999994
+
+
+python train.py --name raft_farneback --stage River_data --validation River_data --lr 0.0001 --num_steps 100000 --batch_size 4 --image_size 400 400 --gpus 0  --wdecay 0.00005  --clip 1.0  --gamma 0.8 --mixed_precision
+
+10000:Validation EPE: 1.311605, 1px: 0.502728, 3px: 0.923726, 5px: 0.985095
+20000:Validation EPE: 1.145122, 1px: 0.558217, 3px: 0.950150, 5px: 0.991133
+30000:Validation EPE: 1.047177, 1px: 0.611955, 3px: 0.959913, 5px: 0.992209
+40000:Validation EPE: 0.988643, 1px: 0.634247, 3px: 0.965606, 5px: 0.993912
+50000:Validation EPE: 0.933451, 1px: 0.662161, 3px: 0.971921, 5px: 0.995090
+60000:Validation EPE: 0.907119, 1px: 0.676393, 3px: 0.974407, 5px: 0.995488
+70000:Validation EPE: 0.881709, 1px: 0.686936, 3px: 0.976948, 5px: 0.996362
+80000:Validation EPE: 0.866175, 1px: 0.694544, 3px: 0.979013, 5px: 0.996636
+90000:Validation EPE: 0.859662, 1px: 0.698239, 3px: 0.979631, 5px: 0.996920
+10000:Validation EPE: 0.854347, 1px: 0.700234, 3px: 0.979812, 5px: 0.997028
+
+
+
+python train.py --name raft_deepflowyuan --stage River_data --validation River_data --lr 0.0001 --num_steps 100000 --batch_size 4 --image_size 400 400 --gpus 0  --wdecay 0.00005  --clip 1.0  --gamma 0.8 --mixed_precision
+
+10000:Validation EPE: 0.815375, 1px: 0.724670, 3px: 0.985532, 5px: 0.998116
+20000:Validation EPE: 0.680128, 1px: 0.797475, 3px: 0.989607, 5px: 0.998650
+30000:Validation EPE: 0.604634, 1px: 0.848771, 3px: 0.992224, 5px: 0.998903
+40000:Validation EPE: 0.543728, 1px: 0.880088, 3px: 0.995786, 5px: 0.999234
+50000:Validation EPE: 0.520815, 1px: 0.889073, 3px: 0.996024, 5px: 0.999117
+60000:Validation EPE: 0.541498, 1px: 0.878710, 3px: 0.996061, 5px: 0.999210
+70000:Validation EPE: 0.495317, 1px: 0.903067, 3px: 0.996172, 5px: 0.999225
+80000:Validation EPE: 0.491300, 1px: 0.904454, 3px: 0.996480, 5px: 0.999316
+90000:Validation EPE: 0.510118, 1px: 0.897352, 3px: 0.996461, 5px: 0.999361
+100000:Validation EPE: 0.492372, 1px: 0.906048, 3px: 0.996495, 5px: 0.999340
