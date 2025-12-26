@@ -1,11 +1,31 @@
-# RAFT
-This repository contains the source code for our paper:
+# ConvFFN-Flow
 
-[RAFT: Recurrent All Pairs Field Transforms for Optical Flow](https://arxiv.org/pdf/2003.12039.pdf)<br/>
-ECCV 2020 <br/>
-Zachary Teed and Jia Deng<br/>
+This repository contains the official implementation of **ConvFFN-Flow**,  
+a lightweight deep optical flow framework designed for realistic river surface motion estimation.
 
-<img src="RAFT.png">
+## Method Overview
+
+ConvFFN-Flow is built upon a recurrent optical flow estimation framework and introduces the following key features:
+
+- A **Convolutional Feed-Forward Network (ConvFFN)** to enhance local feature aggregation and motion representation  
+- Lightweight architectural design for efficient inference and reduced computational cost  
+- Improved robustness in weak-texture regions and specular reflection areas commonly observed in river surfaces  
+- Compatibility with standard optical flow benchmarks as well as realistic river imagery  
+
+---
+
+## Environment Requirements
+
+The code has been tested with the following configuration:
+
+```bash
+Python >= 3.11
+PyTorch >= 2.1
+CUDA >= 12.1
+
+
+
+<img src="">
 
 ## Requirements
 The code has been tested with PyTorch 1.6 and Cuda 10.1.
