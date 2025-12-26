@@ -25,6 +25,15 @@ conda activate ConvFFN-Flow
 conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 
 ```
+## Pretrained Models
+
+We provide pretrained ConvFFN-Flow models for realistic river surface motion estimation.
+All official pretrained weights are released via GitHub Releases:
+
+[https://github.com/nxdsun/ConvFFN-Flow/releases]
+
+Multiple model variants trained under different configurations are available.
+Please refer to the release notes for details of each model.
 
 ## Demos
 Pretrained models can be downloaded by running
